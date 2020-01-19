@@ -1,6 +1,6 @@
 ## Internal Model of Spaces
 
-This post will be the first section of a story on spectra. I have to warn the reader that I have not made the maximal possible effort to verify the statements presented below and I have made no effort to verify that they are consistent with existing literature.
+This post will be the first section of a story on spectra. I have to warn the reader that I have not much effort to verify the statements presented below are correct and I have made no effort to verify that they are consistent with existing literature. It is for this reason that I have named the blog "Bedtime Stories and Daydreams". I hope only to tell a story which is interesting and has some connection with the truth.
 
 To be an internal model is to give an explicit description of an object. The difference is somewhat similar to the difference between a construction of the real numbers (internal) and an axiomatization of the properties of the real numbers. That is, though the axiomatization will allow us to talk about properties of the reals as a whole, it will not lend itself to easy manipulation of actual real numbers. This example of the reals, however, is less catastrophic than other examples of external models, such as external models of sets or spaces.
 
