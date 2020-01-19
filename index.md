@@ -7,3 +7,5 @@ Here are some pages I've written.
 2) [Category Theory](category_theory.md)
 
 3) [Defining Spectra](defining_spectra.md)
+
+4) [Stable Categories](stable_category.md)
