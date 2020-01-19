@@ -6,7 +6,7 @@ It is clear how to define initial and final objects, namely just by asking for t
 
 $$\require{AMScd}
 \begin{CD}
-K(X) @>{ch}>> H(X;\mathbb Q);\\
-@VVV @VVV \\
-K(Y) @>{ch}>> H(Y;\mathbb Q);
+z @>{g}>> a;\\
+@VVV @V{f}VV \\
+0 @>>> b;
 \end{CD}$$
