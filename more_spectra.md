@@ -9,7 +9,7 @@ On spectra, we have two operations. One is the direct sum operation. This will, 
 The adjunction/free spectra functor from unjoinable spectra turns direct sums of spectra (which we can think of as unjoinable spectra) into tensor products. Therefore, the free spectra on one object in degree $0$ is a $E_{\infty}$ algebra, and is called the sphere spectrum. It is connective (it only has positive homotopy groups), and its homotopy groups are the stable homotopy groups of spheres. The higher cells just come from degeneracies, and we can think of there being a copy of $\mathbb{Z}$ in degree $0$. The Eilenberg-Maclane spectrum of an abelian group, $HG$, is by having the elements in degree $0$, and adding cells above to enforce the addition and to eliminate higher homotopies. Any commutative ring will give rise to a $E_{\infty}$ ring. The spectrum $H\mathbb{Z}$ is given by eliminating the higher homotopies of the sphere spectrum. Finally, we can see that we have a stable symmetric monoidal spectral category of modules over any $E_{\infty}$ ring $R$, called $\mathrm{Mod}(R)$.
 
 Finally we will finish this story by describing a tensor operation. Suppose our categories are cocomplete. Then, we can tensor a space $P$ with an object $X$. Namely, we have the adjunction 
-\begin{equation*}
+$$\begin{equation*}
 \mathrm{Hom}(P \otimes X,Y) \cong \mathrm{Hom}(P,\mathrm{Hom}(X,Y))
-\end{equation*}
+\end{equation*}$$
 We additionally have the tensoring of a spectra and an object in a category enriched over spectra. We define as before and we can construct either by building the space/spectra $P$ from points. If the space/spectra has structure, we can add structure to objects in our category. The simple example of $S^1$ leads to the construction of topological Hochschild homology, or THH.
