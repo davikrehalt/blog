@@ -1,4 +1,4 @@
 # blog
-(The most full of shit) Math Blog
+(The mostly BS) Math Blog
 
 That's it.
