@@ -7,3 +7,10 @@ First off is Fourier theory, which deserves to be explained by someone who under
 The one and only, classical Fourier transform (up to some constants who nobody cares (but maybe we should?))
 
 $$\mathcal{F}(f) := \int_{\mathbb{R}}{f(x)e^{2 \pi i t x} dx}$$
+
+Beautiful, no? Transforming function space to character space (I guess frequency space is what most sane people call it). And we have some theorems about turning
+convolutions to products. Let's see that. The key idea here is of course the following identity.
+
+$$\mu^*P \cong \pi_{1,3}^*P \otimes \pi_{2,3}^*P$$
+
+You're probably thinking WTF at this moment, where is any of this symbols coming from?
