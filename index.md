@@ -11,3 +11,5 @@ Here are some pages I've written.
 4) [Stable Categories](stable_category.md)
 
 5) [More on Spectra](more_spectra.md)
+
+6) [Fourier Theory](fourier.md)
