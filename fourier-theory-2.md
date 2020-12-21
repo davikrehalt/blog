@@ -54,7 +54,7 @@ of steps let's see what the function notation translation of the above is.
 
 $$ \begin{align}
 \mathcal{F}^t(\mathcal{F}(f))(\xi)
-& =\int_{\mathbb{R}}{e^{2 \pi i \chi t}\int_{\mathbb{R}}{f(x)e^{2 \pi i x t} dx} dt}\\
+& =\int_{\mathbb{R}}{e^{2 \pi i \xi t}\int_{\mathbb{R}}{f(x)e^{2 \pi i x t} dx} dt}\\
 & =\int_{\mathbb{R}}{\int_{\mathbb{R}}{f(x)e^{2 \pi i x t}e^{2 \pi i \xi t} dx} dt}\\
 & =\int_{\mathbb{R}}{\int_{\mathbb{R}}{f(x)e^{2 \pi i (x + \xi) t} dx} dt}\\
 & =\int_{\mathbb{R}}{f(x) \int_{\mathbb{R}}{e^{2 \pi i (x + \xi) t} dt} dx}\\
