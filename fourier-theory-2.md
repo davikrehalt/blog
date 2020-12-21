@@ -34,3 +34,17 @@ $$\mathcal{F}^t(f) := \pi_{1,*}(\pi_2^*f \otimes P)$$
 
 Now let's investigate $\mathcal{F}^t(\mathcal{F}(f))$.
 
+$$ \mathcal{F}^t(\mathcal{F}(f))
+& \cong \mathcal{F}_{A^t}(w_{1,*}(q_1^*F \otimes P))\\
+& \cong q_{2,*}(w_2^*(w_{1,*}(q_1^*F \otimes P)) \otimes P)\\
+& \cong q_{2,*}(s_{2,*}s_1^*(q_1^*F \otimes P) \otimes P)\\
+& \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P) \otimes P)\\
+& \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P \otimes s_2^*P))\\
+& \cong p_{2,*}r_*(r^*p_1^*F \otimes \lambda^*P)\\
+& \cong p_{2,*}(p_1^*F \otimes r_*\lambda^*P)\\
+& \cong p_{2,*}(p_1^*F \otimes \mu^*\pi_{A,*}P)\\
+& \cong p_{2,*}(p_1^*F \otimes \mu^*\delta[-g])\\
+& \cong p_{2,*}(p_1^*F \otimes \mathcal{O_Z}[-g])\\
+& \cong \langle -1 \rangle^*F[-g]\\
+$$
+
