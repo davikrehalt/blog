@@ -25,7 +25,8 @@ $$\require{AMScd}
 \end{CD}$$
 
 $\pi_1,\pi_2$ are projections out of $\mathbb{A} \times \mathbb{A}^t$, $p_1,p_2$ are the projections out of $\mathbb{A}^{(1)} \times \mathbb{A}^{(2)}$,
-and $w_i : \mathbb{A}^{(i)} \times \mathbb{A}^t \to \mathbb{A}^{(i)}$ is the projection to the first component.
+,$q_i : \mathbb{A}^{(i)} \times \mathbb{A}^t \to \mathbb{A}^{(i)}$ is the projection to the first component,
+and $w_i : \mathbb{A}^{(i)} \times \mathbb{A}^t \to \mathbb{A}^t$ is the projection to the second component.
 
 Without further ado, let's jump into the statement and proof of inversion. As we are working over the additive group $\mathbb{A} \cong \mathbb{R}$,
 we also have $\mathbb{A}^t \cong \mathbb{R}$ and the dual transform (note we don't say inverse because there's some intricacies) is given simply by
@@ -36,7 +37,7 @@ Now let's investigate $\mathcal{F}^t(\mathcal{F}(f))$.
 
 $$ \begin{align}
 \mathcal{F}^t(\mathcal{F}(f))
-& \cong \mathcal{F}_{2,*}(w_{1,*}(q_1^*F \otimes P))\\
+& \cong \mathcal{F}^t(w_{1,*}(q_1^*F \otimes P))\\
 & \cong q_{2,*}(w_2^*(w_{1,*}(q_1^*F \otimes P)) \otimes P)\\
 & \cong q_{2,*}(s_{2,*}s_1^*(q_1^*F \otimes P) \otimes P)\\
 & \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P) \otimes P)\\
@@ -44,9 +45,23 @@ $$ \begin{align}
 & \cong p_{2,*}r_*(r^*p_1^*F \otimes \lambda^*P)\\
 & \cong p_{2,*}(p_1^*F \otimes r_*\lambda^*P)\\
 & \cong p_{2,*}(p_1^*F \otimes \mu^*\pi_{A,*}P)\\
-& \cong p_{2,*}(p_1^*F \otimes \mu^*\delta[-g])\\
-& \cong p_{2,*}(p_1^*F \otimes \mathcal{O_Z}[-g])\\
-& \cong \langle -1 \rangle^*F[-g]\\
 \end{align}
 $$
+
+What we're using is projection formula, base-change and the fact that tensor distributes over pullback--all trivial in the function case. But since it's a lot
+of steps let's see what the function notation translation of the above is.
+$$ \begin{align}
+\mathcal{F}^t(\mathcal{F}(f))(x)
+& \cong \mathcal{F}^t(w_{1,*}(q_1^*F \otimes P))\\
+& \cong q_{2,*}(w_2^*(w_{1,*}(q_1^*F \otimes P)) \otimes P)\\
+& \cong q_{2,*}(s_{2,*}s_1^*(q_1^*F \otimes P) \otimes P)\\
+& \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P) \otimes P)\\
+& \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P \otimes s_2^*P))\\
+& \cong p_{2,*}r_*(r^*p_1^*F \otimes \lambda^*P)\\
+& \cong p_{2,*}(p_1^*F \otimes r_*\lambda^*P)\\
+& \cong p_{2,*}(p_1^*F \otimes \mu^*\pi_{A,*}P)\\
+\end{align}
+$$
+
+
 
