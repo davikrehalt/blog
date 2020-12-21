@@ -146,6 +146,7 @@ $$\require{AMScd}
 
 And it is this pullback square that we had to use Kunneth on. But again translating to function language we just have: 
 (also the obviousness of the function statement is a testament to the fact that Kunneth follows from the projection formula)
+
 $$\begin{aligned}
 \mathcal{F}(f \star g)(t)
 &= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi (x-y) t}f(y)g(x-y) dy}\right)dx}\\
