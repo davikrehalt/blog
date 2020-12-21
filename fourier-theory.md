@@ -20,6 +20,23 @@ it will become tensor.
 $$\mathcal{F}(f) := \pi_{2,*}(\pi_1^*f \otimes P)$$
 
 where $P$ is the function $e^{2 \pi i t x}$ defined over $\mathbb{A}^2=\mathbb{R}^2$ and the pushforward is implemented by the integral. Hence all that
-the weird identity above says is the following (I should note that $\mu$ is the addition map $\mathbb{A}^2 \to \mathbb{A}^1$)
+the weird identity with $(\mu \times id)^*P$ above says is the following. I should note first that $\mu$ is the addition map $\mathbb{A}^2 \to \mathbb{A}^1$,
+which is the group operation for $A^1$ as a group, which is where this Fourier transform is happening. $pi_{1,3}$ is the projection from $\mathbb{A}^3$ to 
+$\mathbb{A}^2$ by projecting to the first and third coordinates, and $\pi_{2,3}$ is of course similarly defined.
 
 $$e^{2 \pi t (x_1 + x_2)} = e^{2 \pi t x_1} e^{2 \pi t x_2}$$
+
+Now let's see how this weird identity helps us turn convolution to multiplication. Convolution is defined by 
+
+$$(f \star g)(x) := \inf_{\mathbb{R}}{f(t)g(x-t) dt}$$
+
+But we'll call rewrite this as:
+
+$$f \star g := \mu_*(\pi_1^*f \otimes \pi_2^*g)$$
+
+via a fake categorification notation. The pushforward is an integration along the fibre. At this point, maybe before, you may be thinking about convergence issues,
+or where these $f$'s and $g$'s are living in. Are they functions? compactly supported? distributions? Well, unfortunately this blog isn't rigorous enough to be defining these things. Sorry.
+
+But anyhow, now we're ready to show a proof for convolutions turning into products. Ready?
+
+
