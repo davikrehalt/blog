@@ -33,7 +33,8 @@ we also have $\mathbb{A}^t \cong \mathbb{R}$ and the dual transform (note we don
 
 $$\mathcal{F}^t(f) := \pi_{1,*}(\pi_2^*f \otimes P)$$
 
-Now let's investigate $\mathcal{F}^t(\mathcal{F}(f))$.
+This is actually different from standard notation precisely because it doesn't really lead to an inverse, even
+up to a constant (there's a reflection involved!). Anyway, let's investigate $\mathcal{F}^t(\mathcal{F}(f))$.
 
 $$ \begin{align}
 \mathcal{F}^t(\mathcal{F}(f))
@@ -50,16 +51,13 @@ $$
 
 What we're using is projection formula, base-change and the fact that tensor distributes over pullback--all trivial in the function case. But since it's a lot
 of steps let's see what the function notation translation of the above is.
+
 $$ \begin{align}
-\mathcal{F}^t(\mathcal{F}(f))(x)
-& \cong \mathcal{F}^t(w_{1,*}(q_1^*F \otimes P))\\
-& \cong q_{2,*}(w_2^*(w_{1,*}(q_1^*F \otimes P)) \otimes P)\\
-& \cong q_{2,*}(s_{2,*}s_1^*(q_1^*F \otimes P) \otimes P)\\
-& \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P) \otimes P)\\
-& \cong q_{2,*}(s_{2,*}(s_1^*(q_1^*F) \otimes s_1^*P \otimes s_2^*P))\\
-& \cong p_{2,*}r_*(r^*p_1^*F \otimes \lambda^*P)\\
-& \cong p_{2,*}(p_1^*F \otimes r_*\lambda^*P)\\
-& \cong p_{2,*}(p_1^*F \otimes \mu^*\pi_{A,*}P)\\
+\mathcal{F}^t(\mathcal{F}(f))(\xi)
+& =\int_{\mathbb{R}}{e^{2 \pi i \chi t}\int_{\mathbb{R}}{f(x)e^{2 \pi i x t} dx} dt}\\
+& =\int_{\mathbb{R}}{\int_{\mathbb{R}}{f(x)e^{2 \pi i x t}e^{2 \pi i \xi t} dx} dt}\\
+& =\int_{\mathbb{R}}{\int_{\mathbb{R}}{f(x)e^{2 \pi i (x + \xi) t} dx} dt}\\
+& =\int_{\mathbb{R}}{f(x) \int_{\mathbb{R}}{e^{4 \pi i (x + \xi) t} dt} dx}\\
 \end{align}
 $$
 
