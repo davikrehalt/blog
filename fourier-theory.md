@@ -94,3 +94,21 @@ $$\begin{aligned}
 &= \int_{\mathbb{R}}{\left(e^{2 \pi x t}\int_{\mathbb{R}}{f(y)g(x-y) dy}\right)dx}\\
 &= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi x t} f(y)g(x-y) dy}\right)dx}\\
 \end{aligned}$$
+
+Next we (finally!) have to use our magic (trivial?) identity we stated above as we foreshadowed. Let's see the categorical case first:
+
+$$\begin{aligned}
+\mathcal{F}(f \star g)
+& \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
+& \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
+\end{aligned}$$
+where $s_1: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(1)} \times \mathbb{A}^t$ and 
+$s_2: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(2)} \times \mathbb{A}^t$.
+
+In function language, again it's super easy:
+
+$\begin{aligned}
+\mathcal{F}(f \star g)(t)
+&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi x t} f(y)g(x-y) dy}\right)dx}\\
+&= \int_{\mathbb{R}}{\left(e^{2 \pi y t}\left(e^{2 \pi (x-y) t}\int_{\mathbb{R}}{f(y)g(x-y) dy}\right)dx}\\
+\end{aligned}$$
