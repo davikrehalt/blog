@@ -1,4 +1,4 @@
-## Fourier Theory Part I: Turning convolution into multiplication
+## Fourier Theory Part I: Turning Convolution into Multiplication
 
 Previously, the posts have presented a vision of homological algebra devoid of chain complexes and what-nots and replacing them fully with spectra,
 the stablization of spaces. This approach is versatile and frankly better in all regards. But here we shift focus to some actual maths for a bit.
