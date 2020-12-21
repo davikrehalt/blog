@@ -61,10 +61,12 @@ $$ \begin{align}
 \end{align}
 $$
 
-Now the key input for us is this computation of $\pi_{1,*}P$, which will turn out to be some skyscraper sheaf thingly supported at the origin and
+Now the key input for us is this computation of $\pi_{1,*}P$ (which is related to this last integral inside),
+which will turn out to be some skyscraper sheaf thingly supported at the origin and
 in function notation it will be some delta function/distribution at the origin. In fact it will be $\frac{1}{2 \pi} \delta(u)$ for us because
 of the $2 \pi$ in the exponent, which tbh I'm not sure why it should be there. But anyhow, once we pull it back along $\mu$ it will be supported at the 
 "anti-diagonal", and hence in function language there's a reflection. Basically--basically, it is 
+
 $$ \begin{align}
 \mathcal{F}^t(\mathcal{F}(f))
 & \cong p_{2,*}(p_1^*f \otimes \mu^*\delta)\\
