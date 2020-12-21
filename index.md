@@ -12,4 +12,6 @@ Here are some pages I've written.
 
 5) [More on Spectra](more_spectra.md)
 
-6) [Fourier Theory](fourier-theory.md)
+6) [Fourier Theory Part I](fourier-theory-1.md)
+
+7) [Fourier Theory Part II](fourier-theory-2.md)
