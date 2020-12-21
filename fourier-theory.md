@@ -102,6 +102,7 @@ $$\begin{aligned}
 & \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*f \otimes p_2^*g))) \\
 & \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes \chi^*(p_1^*f \otimes p_2^*g))) \\
 \end{aligned}$$
+
 where $s_1: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(1)} \times \mathbb{A}^t$ and 
 $s_2: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(2)} \times \mathbb{A}^t$. Then the next step is easy, so
 let's include it too
