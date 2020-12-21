@@ -79,8 +79,8 @@ What does this allow us to do? In categorical language, we now have
 $$\begin{aligned}
 \mathcal{F}(f \star g)
 &\cong \pi_{2,*}(P \otimes \pi_1^*(\mu_*(p_1^*f \otimes p_2^*g))) \\
-& \cong \pi_{2,*}(P \otimes \lambda_*\chi^*(p_1^*F \otimes p_2^*G)) \\
-& \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
+& \cong \pi_{2,*}(P \otimes \lambda_*\chi^*(p_1^*f \otimes p_2^*g)) \\
+& \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*f \otimes p_2^*g))) \\
 \end{aligned}$$
 
 Where in the second line we are using what is called base-change and in the third line we are using what is called the projection formula.
@@ -99,16 +99,58 @@ Next we (finally!) have to use our magic (trivial?) identity we stated above as 
 
 $$\begin{aligned}
 \mathcal{F}(f \star g)
-& \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
-& \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
+& \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*f \otimes p_2^*g))) \\
+& \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes \chi^*(p_1^*f \otimes p_2^*g))) \\
 \end{aligned}$$
 where $s_1: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(1)} \times \mathbb{A}^t$ and 
-$s_2: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(2)} \times \mathbb{A}^t$.
+$s_2: \mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t \to \mathbb{A}^{(2)} \times \mathbb{A}^t$. Then the next step is easy, so
+let's include it too
 
-In function language, again it's super easy:
+$$\begin{aligned}
+\mathcal{F}(f \star g)
+& \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes \chi^*(p_1^*f \otimes p_2^*g))) \\
+& \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes s_1^*q_1^*f \otimes s_2^*q_2^*g)) \\
+\end{aligned}$$
+
+where $q_i$ is the projection map from $\mathbb{A}^{(i)} \times \mathbb{A}^t \to \mathbb{A}^{(i)}$.
+
+In function language, again all this is super simple:
 
 $\begin{aligned}
 \mathcal{F}(f \star g)(t)
 &= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi x t} f(y)g(x-y) dy}\right)dx}\\
-&= \int_{\mathbb{R}}{\left(e^{2 \pi y t}\left(e^{2 \pi (x-y) t}\int_{\mathbb{R}}{f(y)g(x-y) dy}\right)dx}\\
+&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi (x-y) t}f(y)g(x-y) dy}\right)dx}\\
 \end{aligned}$$
+
+Don't worry, we'll almost done. We need a Kunneth theorem next (in functions this is basically Fubini's theorem). The proof until the end
+in the categorical language is
+
+$$\begin{aligned}
+\mathcal{F}(f \star g)
+& \cong \pi_{2,*}(\lambda_*(s_1^*P \otimes s_2^*P \otimes s_1^*q_1^*f \otimes s_2^*q_2^*g)) \\
+& \cong \pi_{2,*}(\lambda_*(s_1^*(P \otimes q_1^*f) \otimes s_2^*(P \otimes q_2^*g)) \\
+& \cong w_{1,*}(P \otimes q_1^*f) \otimes w_{2,*}(P \otimes q_2^*g) \\
+& \cong \mathcal{F}_A(f) \otimes \mathcal{F}_A(g)
+\end{aligned}$$
+
+where the first two lines are obvious and the last line is by definition. Here $w_i:\mathbb{A}^{(i)} \times \mathbb{A}^t \to \mathbb{A}^t$
+is the projection map and we have the following pullback square.
+
+$$\require{AMScd}
+\begin{CD}
+\mathbb{A}^{(1)} \times \mathbb{A}^{(2)} \times \mathbb{A}^t @>{s_2}>> \mathbb{A}^{(2)} \times \mathbb{A}^t;\\
+@V{s_1}VV @V{w_2}VV \\
+\mathbb{A}^{(1)} \times \mathbb{A}^t @>{w_1}>> \mathbb{A}^t;
+\end{CD}$$
+
+And it is this pullback square that we had to use Kunneth on. But again translating to function language we just have: 
+(also the obviousness of the function statement is a testament to the fact that Kunneth follows from the projection formula)
+$\begin{aligned}
+\mathcal{F}(f \star g)(t)
+&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi (x-y) t}f(y)g(x-y) dy}\right)dx}\\
+&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi z t}f(y)g(z) dy}\right)dz}\\
+&= \int_{\mathbb{R}}{e^{2 \pi y t} f(y) dy}\int_{\mathbb{R}}{e^{2 \pi z t} f(z) dz}\\
+&=\mathcal{F}(f)(t)\mathcal{F}(g)(t)
+\end{aligned}$$
+
+Ta-da we're done. We've successfully turned a simple proof into a complicated one.
