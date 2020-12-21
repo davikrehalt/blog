@@ -116,10 +116,10 @@ where $q_i$ is the projection map from $\mathbb{A}^{(i)} \times \mathbb{A}^t \to
 
 In function language, again all this is super simple:
 
-$\begin{aligned}
+$$\begin{aligned}
 \mathcal{F}(f \star g)(t)
-&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi x t} f(y)g(x-y) dy}\right)dx}\\
-&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi (x-y) t}f(y)g(x-y) dy}\right)dx}\\
+& = \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi x t} f(y)g(x-y) dy}\right)dx}\\
+& = \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi (x-y) t}f(y)g(x-y) dy}\right)dx}\\
 \end{aligned}$$
 
 Don't worry, we'll almost done. We need a Kunneth theorem next (in functions this is basically Fubini's theorem). The proof until the end
@@ -145,12 +145,12 @@ $$\require{AMScd}
 
 And it is this pullback square that we had to use Kunneth on. But again translating to function language we just have: 
 (also the obviousness of the function statement is a testament to the fact that Kunneth follows from the projection formula)
-$\begin{aligned}
+$$\begin{aligned}
 \mathcal{F}(f \star g)(t)
 &= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi (x-y) t}f(y)g(x-y) dy}\right)dx}\\
 &= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi y t}e^{2 \pi z t}f(y)g(z) dy}\right)dz}\\
 &= \int_{\mathbb{R}}{e^{2 \pi y t} f(y) dy}\int_{\mathbb{R}}{e^{2 \pi z t} f(z) dz}\\
-&=\mathcal{F}(f)(t)\mathcal{F}(g)(t)
+&=\mathcal{F}(f)(t)\mathcal{F}(g)(t)\\
 \end{aligned}$$
 
 Ta-da we're done. We've successfully turned a simple proof into a complicated one.
