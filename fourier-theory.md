@@ -62,7 +62,7 @@ $$\begin{aligned}
 
 
 But essentially so far nothing has happened. We just wrote down some definitions.
-Now we look at a commutative diagram.
+Now we look at the following pullback diagram.
 
 $$\require{AMScd}
 \begin{CD}
@@ -79,11 +79,18 @@ What does this allow us to do? In categorical language, we now have
 $$\begin{aligned}
 \mathcal{F}(f \star g)
 &\cong \pi_{2,*}(P \otimes \pi_1^*(\mu_*(p_1^*f \otimes p_2^*g))) \\
-& \cong \pi_{A^t,*}(P \otimes \lambda_*\chi^*(p_1^*F \otimes p_2^*G)) \\
-& \cong \pi_{A^t,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
-
+& \cong \pi_{2,*}(P \otimes \lambda_*\chi^*(p_1^*F \otimes p_2^*G)) \\
+& \cong \pi_{2,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
 \end{aligned}$$
 
 Where in the second line we are using what is called base-change and in the third line we are using what is called the projection formula.
-But what does that translate to in down-to-earth terms? Let's translate the above into normal function notation and see.
+But what does that translate to in down-to-earth terms? Let's translate the above into normal function notation and see. The base-change
+is trivial in the function case. (Interesting side remark here: If you try to prove these statements in some formal system, you will have
+to show this "trivial" step; so maybe formal systems make you categorify your proofs?) The projection formula, sadly, also says nothing more than
+just that you can take the function into the integral. So all that fancyness translates to:
 
+$$\begin{aligned}
+\mathcal{F}(f \star g)(t)
+&= \int_{\mathbb{R}}{\left(e^{2 \pi x t}\int_{\mathbb{R}}{f(y)g(x-y) dy}\right)dx}\\
+&= \int_{\mathbb{R}}{\left(\int_{\mathbb{R}}{e^{2 \pi x t} f(y)g(x-y) dy}\right)dx}\\
+\end{aligned}$$
