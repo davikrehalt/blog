@@ -38,17 +38,18 @@ $$(f \star g)(x) := \int_{\mathbb{R}}{f(y)g(x-y) dy}$$
 
 But we'll call rewrite this as:
 
-$$f \star g := \mu_*(\pi_1^*f \otimes \pi_2^*g)$$
+$$f \star g := \mu_*(p_1^*f \otimes p_2^*g)$$
 
-via our fake categorification notation. The pushforward is an integration along the fibre. At this point, maybe before, you may be thinking about convergence issues,
+via our fake categorification notation (Here we're using $p_1$ and $p_2$ as the two projection maps.
+The pushforward is an integration along the fibre. At this point, maybe before, you may be thinking about convergence issues,
 or where these $f$'s and $g$'s are living in. Are they functions? compactly supported? distributions? Well, unfortunately this blog isn't rigorous enough to be talking about these things. Sorry.
 
 But anyhow, now we're all set to turn convolutions into products. Ready?
 
 $$\begin{aligned}
 \mathcal{F}(f \star g)
-&\cong \mathcal{F}(\mu_*(\pi_1^*f \otimes \pi_2^*g)) \\
-&\cong \pi_{2,*}(P \otimes \pi_1^*(\mu_*(\pi_1^*f \otimes \pi_2^*g)))
+&\cong \mathcal{F}(\mu_*(p_1^*f \otimes p_2^*g)) \\
+&\cong \pi_{2,*}(P \otimes \pi_1^*(\mu_*(p_1^*f \otimes p_2^*g)))
 \end{aligned}$$
 
 In function language, it says
@@ -56,7 +57,7 @@ In function language, it says
 $$\begin{aligned}
 \mathcal{F}(f \star g)(t)
 &= \mathcal{F}(\int_{\mathbb{R}}{f(y)g(x-y) dy}) \\
-&= \int_{\mathbb{R}}{e^{2 \pi x t}\int_{\mathbb{R}}{f(y)g(x-y) dy}dx}
+&= \int_{\mathbb{R}}{\left(e^{2 \pi x t}\int_{\mathbb{R}}{f(y)g(x-y) dy}\right)dx}
 \end{aligned}$$
 
 
@@ -77,8 +78,12 @@ What does this allow us to do? In categorical language, we now have
 
 $$\begin{aligned}
 \mathcal{F}(f \star g)
-&\cong \pi_{2,*}(P \otimes \pi_1^*(\mu_*(\pi_1^*f \otimes \pi_2^*g))) \\
+&\cong \pi_{2,*}(P \otimes \pi_1^*(\mu_*(p_1^*f \otimes p_2^*g))) \\
 & \cong \pi_{A^t,*}(P \otimes \lambda_*\chi^*(p_1^*F \otimes p_2^*G)) \\
 & \cong \pi_{A^t,*}(\lambda_*(\lambda^*P \otimes \chi^*(p_1^*F \otimes p_2^*G))) \\
 
 \end{aligned}$$
+
+Where in the second line we are using what is called base-change and in the third line we are using what is called the projection formula.
+But what does that translate to in down-to-earth terms? Let's translate the above into normal function notation and see.
+
