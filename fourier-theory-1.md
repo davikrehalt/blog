@@ -1,4 +1,4 @@
-## Fourier Theory
+## Fourier Theory Part I: Turning convolution into multiplication
 
 Previously, the posts have presented a vision of homological algebra devoid of chain complexes and what-nots and replacing them fully with spectra,
 the stablization of spaces. This approach is versatile and frankly better in all regards. But here we shift focus to some actual maths for a bit.
@@ -9,7 +9,7 @@ The one and only, classical Fourier transform (up to some constants who nobody c
 $$\mathcal{F}(f) := \int_{\mathbb{R}}{f(x)e^{2 \pi i x t} dx}$$
 
 Beautiful, no? Transforming function space to character space (I guess frequency space is what most sane people call it). And we have some theorems about turning
-convolutions to products. Let's see that. The key idea here is of course the following identity.
+convolutions to products. Let's see that (WARNING: technical math ahead). The key idea here is of course the following identity.
 
 $$(\mu \times id)^*P \cong \pi_{1,3}^*P \otimes \pi_{2,3}^*P$$
 
@@ -154,4 +154,5 @@ $$\begin{aligned}
 &=\mathcal{F}(f)(t)\mathcal{F}(g)(t)\\
 \end{aligned}$$
 
-Ta-da we're done. We've successfully turned a simple proof into a complicated one.
+Ta-da we're done. We've successfully turned a simple proof into a complicated one. Let's continue next time with inversion. Remember what we needed here:
+$P$ respects the group operation, Kunneth, base-change, and projection formula.
