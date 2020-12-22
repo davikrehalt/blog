@@ -83,3 +83,5 @@ $$ \begin{align}
 &=\frac{f(-\xi)}{2 \pi}
 \end{align}
 $$
+
+We'll continue next time with less technical stuff and talk about generalizations of Fourier Theory.
