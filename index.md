@@ -23,3 +23,5 @@ Here are some pages I've written.
 10) [TQFTs](tqft.md)
 
 11) [Counting Primes](primes.md)
+
+12) [Physics](physics.md)
