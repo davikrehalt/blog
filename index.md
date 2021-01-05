@@ -18,4 +18,4 @@ Here are some pages I've written.
 
 8) [Fourier Theory Part III](fourier-theory-3.md)
 
-9) [D-modules; A discussion](d-modules.md)
+9) [D-modules](d-modules.md)
