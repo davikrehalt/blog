@@ -19,3 +19,7 @@ Here are some pages I've written.
 8) [Fourier Theory Part III](fourier-theory-3.md)
 
 9) [D-modules](d-modules.md)
+
+10) [TQFTs](tqft.md)
+
+11) [Counting Primes](primes.md)
