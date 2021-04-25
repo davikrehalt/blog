@@ -1,3 +1,3 @@
-## Prime counting
+## Zeta Functions
 
-Try to recreate the proof of the prime density connection with Riemann.
+Let's talk a little bit about zeta functions.
