@@ -22,6 +22,6 @@ Here are some pages I've written.
 
 10) [TQFTs](tqft.md)
 
-11) [Zeta Function](primes.md)
+11) [Zeta Function](zeta.md)
 
 12) [Physics](physics.md)
