@@ -13,4 +13,4 @@ $$tr(\frac{1}{1-q^{-s}F},H^*(X))$$
 
 More familar is to take the characteristic function of $F$ wrt to $q^{-s}$
 This has a sum interpretation as
-$$exp(\sum{a_n}{nq^{ns}}})$$
+$$exp(\sum{\frac{a_n} {n q^{ns}}})$$
