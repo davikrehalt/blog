@@ -20,3 +20,5 @@ Because of the finite-dimensional l-adic cohomologies, we can write this also as
 It's clear that the actual characteristic function of $F$ on $H^*$ is
 $$T^e exp(-\sum{\frac{a_n} {n T^{-n}}})$$
 where $e$ is the Euler characteristic.
+
+Poincare duality plus the fact that F acts by $q^n$ in cohomology $2n$ shows the functional equation. 
