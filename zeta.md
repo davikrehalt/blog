@@ -11,6 +11,6 @@ $$a_n = tr(F,H^*(X))$$
 So the first generating function above is in a undefined sense the same as 
 $$tr(\frac{1}{1-q^{-s}F},H^*(X))$$
 
-More familar is to take the characteristic function of $F$ wrt to $q^{-s}$
-This has a sum interpretation as
+More familar is to take the $det(1-q^{-s} F}$ which is in some sense a characteristic function.
+Using the determinant of exponential formula this has a sum interpretation as
 $$exp(\sum{\frac{a_n} {n q^{ns}}})$$
