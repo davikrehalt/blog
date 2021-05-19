@@ -18,10 +18,4 @@ Here are some pages I've written.
 
 8) [Fourier Theory Part III](fourier-theory-3.md)
 
-9) [D-modules](d-modules.md)
-
-10) [TQFTs](tqft.md)
-
-11) [Zeta Function](zeta.md)
-
-12) [Physics](physics.md)
+9) [Zeta Function](zeta.md)
