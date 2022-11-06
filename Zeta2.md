@@ -25,7 +25,8 @@ for TP see Antieau-Mathew-Nikolaus, for étale it is in SGA4.5 for example)
 
 Let's think about this story a little bit more. The Frobenius on the l-adic etale K-theory can be constructed by the following.
 Take a category $C$ over $\mathbb{F}_q$, and base-change to $\bar{\mathbb{F}_q}$. This has a canonical arithmetic (non-linear) Frobenius.
-This gives the action of arithmetic Frobenius on the bott-inverted étale cohomology. 
+This gives the action of arithmetic Frobenius on the bott-inverted étale cohomology. For p-adic cohomology theory, we need some idea of how
+the arithmetic Frobenius on TP relates to the geometric Frobenius.
 
 
 By the way, the above story sheafifies to a scheme of course. Give
