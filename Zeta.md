@@ -1,4 +1,4 @@
-## Zeta Functions Part I: Varieties Finite Fields Generalities
+## Zeta Functions Part I: Definition of Hasse-Weil Zeta Function
 
 Some credits to begin with, I'm kind of mostly copying from Mircea's notes https://dept.math.lsa.umich.edu/~mmustata/zeta_book.pdf for this post.
 OK there'll be some interpretations from me but if you want the correct maths, probably good to look there for all the right formulas. Anyways,
@@ -66,5 +66,5 @@ $$|\mathbb{P}^k(\mathbb{F}_{q^n})| = q^nK+q^{n(K-1)}+ \ldots + 1 = \frac{q^{K(n+
 
 And hence
 
-$$Z(s) = \prod_{i=0}^{k}{\frac{1}{1-q^{i-s}}$$
+$$Z(s) = \prod_{i=0}^{k}{\frac{1}{1-q^{i-s}}}$$
 
