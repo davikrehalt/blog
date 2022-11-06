@@ -7,11 +7,11 @@ cyclic groups. We've done lines, let's first now think about circles and cyclic 
 Yeah, so the point--the point is that somehow the dual of a LCH abelian group (or smooth or whatever structure I don't think it matters much) is the space of 
 continuous group homomorphisms into a circle (don't ask me why), or basically it's like the space of simple representations (over $\mathbb{C}$)). So suppose $G$
 is our group and $G^{\vee}$ is our space of simple representations. This space has to by its nature has a universal line bundle over it
-with a representation of $G$ on it. Or equivalently, there's a line bundle over $BG \times G^{\vee}$, which gives a function on $G \times G^{\vee}$ by taking loop spaces (the loop space of $BS^1$ is $S^1$ which sits inside $\mathbb{C}^{\cross})
+with a representation of $G$ on it. Or equivalently, there's a line bundle over $BG \times G^{\vee}$, which gives a function on $G \times G^{\vee}$ by taking loop spaces (the loop space of $BS^1$ is $S^1$ which sits inside $\mathbb{C}^{\times})
 
 In fact, because the group structure on $G^{\vee}$ is defined from tensor product of 1-dimensional representations, there's even a map
 $$BG \times BG^{\vee} \to B^3\mathbb{Z}$$ 
-(recall that $B\mathbb{Z} \cong S^1$ is the same as $\mathbb{C}^{\cross}$ up to homotopy) 
+(recall that $B\mathbb{Z} \cong S^1$ is the same as $\mathbb{C}^{\times}$ up to homotopy) 
 Furthermore, there's infinitely many deloopings of this map extending it to a map of (manifold) spectra
 $$G \times G^{\vee} \to S^1$$
 
@@ -20,8 +20,8 @@ In fact, I believe the above is basically the universal property for $G^{\vee}$.
 All of our prior discussions hold here, but let's see it. We need to check two things. One, we need to check that the function respects the group structure
 of $G$ and $G^{vee}$ and two, that it pushes down to the delta function.
 
-For the fact that the function respects the group structure, we notice the following. A group homomorphism from $G$ to $\mathbb{C}^{\cross}$ is the same
-as a map from $BG$ to $B\mathbb{C}^{\cross} \cong \mathbb{CP}^{\infty}$, which is the line bundle data we started with. Hence the group structure compatibility is basically automatic. 
+For the fact that the function respects the group structure, we notice the following. A group homomorphism from $G$ to $\mathbb{C}^{\times}$ is the same
+as a map from $BG$ to $B\mathbb{C}^{\times} \cong \mathbb{CP}^{\infty}$, which is the line bundle data we started with. Hence the group structure compatibility is basically automatic. 
 
 The second property to check is equivalent to the statement that all nontrivial characters have zero integral. I think this basically follows from symmetry considerations.
 
