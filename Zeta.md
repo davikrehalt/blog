@@ -1,6 +1,6 @@
 ## Zeta Functions Part I: Definition of Hasse-Weil Zeta Function
 
-Some credits to begin with, I'm kind of mostly copying from Mircea's notes https://dept.math.lsa.umich.edu/~mmustata/zeta_book.pdf for this post.
+Some credits to begin with, I'm kind of copying a lot from Mircea's notes https://dept.math.lsa.umich.edu/~mmustata/zeta_book.pdf for the next few posts.
 OK there'll be some interpretations from me but if you want the correct maths, probably good to look there for all the right formulas. Anyways,
 let's begin.
 
