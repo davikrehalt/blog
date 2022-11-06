@@ -53,18 +53,18 @@ $$Z(s) = \prod_{v \in particles/points}{\frac{1}{1-\|v\|^{-s}}}$$
 
 and also
 
-$$Z(s) = \exp(\sum_{v \in particles}{\sum_{n=0}^{\infty}{\frac{\|v\|^{ns}}{n}}})$$
+$$Z(s) = \exp(\sum_{v \in particles}{\sum_{n=1}^{\infty}{\frac{\|v\|^{ns}}{n}}})$$
 
 and hence also
 
-$$Z(s) = \exp(\sum_{n=0}^{\infty}{\frac{|X(\mathbb{F}_{q^n})|}{n}})$$
+$$Z(s) = \exp(\sum_{n=1}^{\infty}{q^{-ns}\frac{|X(\mathbb{F}_{q^n})|}{n}})$$
 
 OK so let's see some examples, for the first time in this blog. Mostly because I'm not sure I can ever remember these formulae/formuals correctly.
-Let's just compute for $\mathbb{P}^n$ over $\mathbb{F}_q$. 
+Let's just compute for $\mathbb{P}^K$ over $\mathbb{F}_q$. 
   
-$$|\mathbb{P}^1_{\mathbb{F}_{q}}(\mathbb{F}_{q^n})| = q^n+q^{n-1}+ \ldots + 1 = \frac{q^{n+1}-1}{q-1}$$
+$$|\mathbb{P}^k(\mathbb{F}_{q^n})| = q^nK+q^{n(K-1)}+ \ldots + 1 = \frac{q^{K(n+1)}-1}{q^n-1}$$
 
 And hence
 
-$$Z(s) = \exp(\frac{1}{q-1}\sum_{n=0}^{\infty}{\frac{q^n+1}{n}})$$
+$$Z(s) = \prod_{i=0}^{k}{\frac{1}{1-q^{i-s}}$$
 
