@@ -19,7 +19,7 @@ of varieties (someone said this to me once, idk if he thought this way or not).
 
 Here is something we can do (only) in the curves case, we also have the equation.
 
-$$Z(s) = \sum_{L \in Pic(X)(\mathbb{F}_q){\frac{q^{h^0(L)}-1}{q-1}q^{-s deg(L)}})$$
+$$Z(s) = \sum_{L \in Pic(X)(\mathbb{F}_q)}{\frac{q^{h^0(L)}-1}{q-1}q^{-s deg(L)}})$$
 
 coming from the first definition of the Zeta function. This uses the fact that divisors define line bundles for curves, and the number
 of states/divisors of each line bundle is the size of the ($\mathbb{F}_q$ points of) the projectivized global sections.
