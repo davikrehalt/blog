@@ -18,7 +18,7 @@ $$G \times G^{\vee} \to S^1$$
 In fact, I believe the above is basically the universal property for $G^{\vee}$.
 
 All of our prior discussions hold here, but let's see it. We need to check two things. One, we need to check that the function respects the group structure
-of $G$ and $G^{vee}$ and two, that it pushes down to the delta function.
+of $G$ and $G^{\vee}$ and two, that it pushes down to the delta function.
 
 For the fact that the function respects the group structure, we notice the following. A group homomorphism from $G$ to $\mathbb{C}^{\times}$ is the same
 as a map from $BG$ to $B\mathbb{C}^{\times} \cong \mathbb{CP}^{\infty}$, which is the line bundle data we started with. Hence the group structure compatibility is basically automatic. 
