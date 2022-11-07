@@ -5,7 +5,8 @@ Abelian group. To be honest, I'm not sure about classifications, but basically I
 cyclic groups. We've done lines, let's first now think about circles and cyclic groups as we attempt our generalization.
 
 Yeah, so the point--the point is that somehow the dual of a LCH abelian group (or smooth or whatever structure I don't think it matters much) is the space of 
-continuous group homomorphisms into a circle (don't ask me why), or basically it's like the space of simple representations (over $\mathbb{C}$)). So suppose $G$
+continuous group homomorphisms into a circle (don't ask me why (edit: I think it's basically because circle is like $\mathbb{C}^{\times}$),
+or basically it's like the space of simple representations (over $\mathbb{C}$)). So suppose $G$
 is our group and $G^{\vee}$ is our space of simple representations. This space has to by its nature has a universal line bundle over it
 with a representation of $G$ on it. Or equivalently, there's a line bundle over $BG \times G^{\vee}$, which gives a function on $G \times G^{\vee}$ by taking loop spaces (the loop space of $BS^1$ is $S^1$ which sits inside $\mathbb{C}^{\times}$)
 
