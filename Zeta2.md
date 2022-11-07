@@ -13,7 +13,8 @@ difference of the two is a $\bar{\mathbb{F}_q}$-linear endomorphism from $\bar{X
 there's an isomorphism between $\bar{X}^{(1)}$ and $\bar{X}$. Hence, there's a $\bar{\mathbb{F}_q}$-linear endomorphism of $\bar{X}$ whose
 fixed points are exactly the $\mathbb{F}_q$ points of $X$ (and they are index one fixed points).
 
-Now, suppose we have some symmetric monoidal functor $H$ from $\bar{\mathbb{F}_q}$-Categories to Vector spaces over some ring. This happens
+Now, suppose we have some symmetric monoidal functor $H$ from $\bar{\mathbb{F}_q}$-(smooth and proper) Categories 
+to Vector spaces over some ring. This happens
 with etale K-theory over any characteristic. Over $l$-adics (for the base-change to alg closure) it is $K(1)$-local K-theory which is the same as bott-inverted étale cohomology
 (for schemes!).
 Over $p$-adics it coincides with TP. Then the calculation of traces can be done on either side. If we compute the traces of Frobenius
@@ -28,7 +29,9 @@ Take a category $C$ over $\mathbb{F}_q$, and base-change to $\bar{\mathbb{F}_q}$
 This gives the action of arithmetic Frobenius on the bott-inverted étale cohomology. For p-adic cohomology theory, one relates cyclotomic
 Frobenius on TP to the Absolute Frobenius on Crystalline cohomology and use that to conclude. (Maybe a later post will touch on this)
 Hence, the story really starts with just a $\mathbb{F}_q$-linear category. For the l-adic story see (Clausen-Mathew, 
-Antieau-Mathew-Naumann-Noel, Antieau-Mathew-Morrow. For the p-adic story, there's Nikolaus-Scholze, and Tabuada
+Antieau-Mathew-Naumann-Noel, Antieau-Mathew-Morrow. For the p-adic story, there's Nikolaus-Scholze, and Tabuada. Note that on l-adic theory
+the eigenvalues over KU_{\hat{l}} is coming from the standard eigenvalues. And in the TP story, in the absolute case, the eigenvalues
+are size (in C) equal to degree because the eigenvalues are shifted.
 
 By the way, the above story sheafifies to a scheme of course. Given a QC sheaf of categories, we can decategorify with l-adic or p-adic.
 By G-L theory, we can translate the pushforward (do nothing) and pullback (QC pullback) of categories to the analogous operations on 
