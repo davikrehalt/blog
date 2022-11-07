@@ -17,3 +17,9 @@ Here are some pages I've written.
 7) [Fourier Theory Part II](fourier-theory-2.md)
 
 8) [Fourier Theory Part III](fourier-theory-3.md)
+
+9) [Zeta Functions Part I](Zeta.md)
+
+10) [Zeta Function Part II](Zeta2.md)
+
+11) [Zeta Functions Part III](Zeta3.md)
