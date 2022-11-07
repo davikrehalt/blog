@@ -25,7 +25,9 @@ Instantly proving the Grothendieck-Lefshetz Trace Formula. (OK there was some wo
 for TP see Antieau-Mathew-Nikolaus, for étale it is in SGA4.5 for example)
 
 Let's think about this story a little bit more. The Frobenius on the l-adic etale K-theory can be constructed by the following.
-Take a category $C$ over $\mathbb{F}_q$, and base-change to $\bar{\mathbb{F}_q}$. This has a canonical arithmetic (non-linear) Frobenius.
+Take a category $C$ over $\mathbb{F}_q$ , and base-change to $\bar{\mathbb{F}_q}$. 
+
+This has a canonical arithmetic (non-linear) Frobenius.
 This gives the action of arithmetic Frobenius on the bott-inverted étale cohomology. For p-adic cohomology theory, one relates cyclotomic
 Frobenius on TP to the Absolute Frobenius on Crystalline cohomology and use that to conclude. (Maybe a later post will touch on this)
 Hence, the story really starts with just a $\mathbb{F}_q$-linear category. For the l-adic story see (Clausen-Mathew, 
