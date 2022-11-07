@@ -38,4 +38,9 @@ we can restrict to any point of $Pic^0$ and do Fourier analysis on the points of
 point of the curve). This sort of computation is what Tate did, and why Riemann-Roch can prove functional equations for curves.
 
 Comparing with Riemann Zeta, we have to conclude that theta function serves as cohomology on $Sym^t(\bar{\mathbb{Z}})=\bar{\mathbb{Z}}$
-and the cohomology should be $L^2(S^1)$ with the exponential action of the laplacian.
+and the cohomology should be $L^2(S^1)$ with the exponential action of the laplacian. A quick note is that the Riemann zeta function can
+be described as
+$$\frac{\Gamma(s/2)\zeta(s)}/\pi^{s/2}} = Tr(\frac{\Gamma(s/2)\delta^{s/2}}{ | L^2(S^1) = Tr(\delta | L^2(S^{s/2}))$$
+
+Maybe the l-adic sheaf theory should have an analogue of $\mathbb{C}^{\times}$-equivariant sheaves on complex manifolds, which can recover
+certain sheaves on $\mathbb{RP}^n$. This should have some form of function-sheaf correspondence maybe.
