@@ -5,7 +5,7 @@ the sum of the residues at points add to 0. This is witnessed by the following e
 
 $$0 \to \mathcal{O}^{\times} \to K^{\times} \to K^{\times}/\mathcal{O}^{\times} \to H^1(\mathcal{O}^{\times}) \to 0$$
 
-The second version we'll discuss is residue via integration of top differential forms. On compact complex manifolds (and also
+The second version we'll discuss is residue via integration of differential forms. On compact complex manifolds (and also
 complex manifolds completed at a compact subset), we have the top differential form (maybe completed) can be integrated via adjunction data.
 
 $$p_*(\omega_X) \to \mathbb{C}$$
@@ -20,3 +20,10 @@ $$H^0(\Gamma_S\omega_X) \to H^0(\omega_X) \to \mathbb{C}$$
 
 which is contour integration (the left hand side is a hyperfunction on S.
 
+But by the residue theorem, the contour integration of a meromorphic function/differential form should come from its residues. This follows
+from the statement the contour can be deformed to infinitesimal contours along the residues, since on holomorphic things the deformation is trivial.
+
+As a side remark, the integration of cycles and forms descends to homology and cohomology classes via instances of stokes theorem.
+And the pairing above should appear in hodge theory in $H^{0,n}$ and $H^{n,0}$ pairings, via something explicit.
+
+Now let's turn to the case of interest in this post, which is Brauer classes on number fields.
