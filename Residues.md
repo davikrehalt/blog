@@ -11,12 +11,12 @@ complex manifolds completed at a compact subset), we have the top differential f
 $$p_*(\omega_X) \to \mathbb{C}$$
 
 where $p : X \to \mathbb{C}$ is the projection map. Now for curves
-$$H^0(\omega) = H^1(\Omega^1)$$
+$$H^0(\omega_X) = H^1(\Omega^1_X)$$
 and we can create instances of the second object via covers of the algebraic curve. In particular, we can get objects there that come from
 a differential form supported on a real curve (like a circle). In fact I believe all nontrivial elements are obtained this way. That is for
 any class of a real curve $S \to C$, there's a map
 
-$$H^0(\Gamma_S\omega) \to H^0(\omega) \to \mathbb{C}$$
+$$H^0(\Gamma_S\omega_X) \to H^0(\omega_X) \to \mathbb{C}$$
 
 which is contour integration (the left hand side is a hyperfunction on S.
 
