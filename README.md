@@ -1,4 +1,4 @@
 # Bedtime Stories and Daydreams
-The (sometimes BS) Math Blog
+The (mostly BS) Math Blog
 
 That's it.
