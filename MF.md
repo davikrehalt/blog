@@ -8,4 +8,4 @@ There's brauer classes here of the trivial MF category -> geometric object. The 
 
 MF category is like a singularity category.
 
-
+ACtually it's not clifford modules bc the derived category has different maps.
