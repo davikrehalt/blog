@@ -1,0 +1,19 @@
+Some random notes of proofs
+
+1) Suslin computation of alg K theory of C
+
+This is suslin's proof of Quillen-Litchenbaum in char 0. It can be given a modern clothes as follows.
+
+Take the site of manifolds and open coverings. Take alg Ktheory of continuous functions. It's a sheaf. It is homotopy invariant when you profinitely complete as you can check on local rings which are Henselian so you have Gabber rigidity. Hence it is determined on the point which is alg K theory of C profinite.
+But why is this also top K theory profinitely completed? This is because the homotopy invariant-fication of alg K theory of continuous functions (left adjoint I think) is computed by geometrically realization of simplexes and turns alg K theory to top K theory, but it doesn't change the profinite completion so we're done.
+
+2) BZp in char p
+
+Compute the comonad of QC on Gm supported at point torsion pushed to point (Fp). This has a right adjoint by cross pull and torsion.
+
+This is comonadic. Compute the monad and you'll see that it's the one from BZp (Zp profinite group scheme)
+
+3) Bott Periodicity (from Burklund but I'm probably restating it wrongly here)
+
+Just recall that U by diagonalization is like a vector space over a bunch of point of the circle only accumulating at 1. This is also BVect.
+
